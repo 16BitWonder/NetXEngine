@@ -349,8 +349,8 @@ void _sound_get(ODItem *item)
 void _music_change(ODItem *item, int dir)
 {
 	int result = settings->music_enabled + dir;
-	if (result < 0) result = 4;
-	if (result > 4) result = 0;
+	if (result < 0) result = 2;
+	if (result > 2) result = 0;
 	music_set_enabled(result);
 	sound(SND_MENU_SELECT);
 }
